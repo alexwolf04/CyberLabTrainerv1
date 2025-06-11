@@ -1,0 +1,29 @@
+﻿<Window x:Class="CyberLabTrainer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CyberLabTrainer - Hands-On Cybersecurity"
+        Height="900" Width="1200"
+        Background="#1E1E2E"
+        FontFamily="Segoe UI"
+        Foreground="#D0D0E0">
+    <Grid Margin="20">
+        <DockPanel>
+            <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Margin="0 0 0 15" HorizontalAlignment="Left">
+                <Button Content="PowerShell Runner" Click="ShowPowerShellUI" Margin="5" Padding="12 6"
+                        Background="#4A90E2" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+                <Button Content="Event Log Viewer" Click="ShowEventLogUI" Margin="5" Padding="12 6"
+                        Background="#4A90E2" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+                <Button Content="File Monitor Challenge" Click="ShowFileMonitorUI" Margin="5" Padding="12 6"
+                        Background="#4A90E2" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+                <Button Content="Process Monitoring Challenge" Click="ShowProcessMonitorUI" Margin="5" Padding="12 6"
+                        Background="#4A90E2" Foreground="White" FontWeight="Bold" BorderThickness="0" Cursor="Hand"/>
+            </StackPanel>
+
+            <Border Background="#292B3E" CornerRadius="8" Padding="10" >
+                <ScrollViewer VerticalScrollBarVisibility="Auto" >
+                    <StackPanel x:Name="MainContent" />
+                </ScrollViewer>
+            </Border>
+        </DockPanel>
+    </Grid>
+</Window>
